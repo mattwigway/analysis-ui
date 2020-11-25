@@ -9,7 +9,8 @@ const proxy = dev
   ? createProxyMiddleware({
       target: process.env.NEXT_PUBLIC_BACKEND_PROXY_URL,
       changeOrigin: true,
-      pathRewrite: {'^/api/backend': ''}
+      pathRewrite: {'^/api/backend': ''},
+      autoRewrite: true
     })
   : null
 
