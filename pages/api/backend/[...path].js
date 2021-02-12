@@ -16,7 +16,7 @@ const proxy = dev
 
 export const config = {
   api: {
-    bodyParser: false // don't try to parse the body, id could be some binary blob
+    bodyParser: false // don't try to parse the body, it could be some binary blob
   }
 }
 
